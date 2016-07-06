@@ -1,0 +1,14 @@
+titulos
+Libre Baskerville
+<link href="https://fonts.googleapis.com/css?family=Libre+Baskerville" rel="stylesheet">
+font-family: 'Libre Baskerville', serif;
+
+contenido
+Neuton
+<link href="https://fonts.googleapis.com/css?family=Neuton" rel="stylesheet">
+font-family: 'Neuton', serif;
+
+titulo del periodico
+Old English text
+
+@import 'https://fonts.googleapis.com/css?family=Libre+Baskerville';
