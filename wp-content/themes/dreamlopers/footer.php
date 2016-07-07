@@ -29,10 +29,10 @@
 					<i class="fa fa-youtube youtube" aria-hidden="true"></i>
 				</a>
 				<a class='social-icon' href=''>
-					<i class="fa fa-snapchat-ghost" aria-hidden="true"></i>
+					<i class="fa fa-snapchat-ghost snapchat" aria-hidden="true"></i>
 				</a>
 				<a class='social-icon' href=''>
-					<i class="fa fa-skype" aria-hidden="true"></i>
+					<i class="fa fa-skype skype" aria-hidden="true"></i>
 				</a>
 			</div>
 		</div>
