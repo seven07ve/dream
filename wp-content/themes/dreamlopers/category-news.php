@@ -5,7 +5,7 @@
 get_header("news");
 ?>
 
-	<div class="homepage-hero-module">
+<div class="homepage-hero-module">
 		<div class="video-container">
 			<div class="filter"></div>
 			<video autoplay loop class="fillWidth">
@@ -18,7 +18,7 @@ get_header("news");
 			<div class='container'>
 				<div class='row'>
 					<div class='col-md-12 nombre-news'>
-						<img width="600" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/dreamlopers_blanco.png" alt="" />
+						<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/dreamlopers_news.png" alt="" />
 					</div>
 				</div>
 			</div>
@@ -64,7 +64,7 @@ get_header("news");
 					<?php the_excerpt(); ?>
 				</div>
 				<div class="post-fin"></div>
-				<div class="text-right"><a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title(); ?>">mas...</a></div>
+				<div class="text-right mas"><a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title(); ?>">mas...</a></div>
 			</div>
 		</div>
 		<?php endwhile; ?>

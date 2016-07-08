@@ -174,7 +174,7 @@ hr.fina{
 
 .pestanas{
 	float:right;
-	margin-top: -200px;
+	margin-top: -100px;
 }
 /*-------------menu---------------------*/
 
@@ -221,7 +221,7 @@ hr.fina{
 .post-content{
 	margin-top: 5%;
 	max-height: 400px;
-	min-height: 335px;
+	/*min-height: 335px;*/
 	overflow: hidden;
 }
 
@@ -253,6 +253,10 @@ hr.fina{
 	opacity:0.96;
 }
 
+.mas a{
+	font-family: 'Luckiest Guy', sans-serif;
+	color: #0dc0c0;
+}
 .post-thumbnail {
 	width: 50%;
 	float: right;

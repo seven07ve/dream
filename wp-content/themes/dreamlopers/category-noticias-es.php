@@ -4,40 +4,50 @@
 */
 get_header("news");
 ?>
-<section class="contenedor">
-	<div class="row superior">
-		<div class="hidden-xs col-sm-3 col-md-3">
-			<img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/news/<?php echo rand(1, 4); ?>.png" class="img-responsive" alt="Image">
+<div class="homepage-hero-module">
+	<div class="video-container">
+		<div class="filter"></div>
+		<video autoplay loop class="fillWidth">
+			<source src="<?php echo get_stylesheet_directory_uri(); ?>/assets/videos/MP4/Push-The-Buttons.mp4" type="video/mp4" />Your browser does not support the video tag. I suggest you upgrade your browser.
+			<source src="<?php echo get_stylesheet_directory_uri(); ?>/assets/videos/WEBM/Push-The-Buttons.webm" type="video/webm" />Your browser does not support the video tag. I suggest you upgrade your browser.
+		</video>
+		<div class="poster hidden">
+			<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/news/Push-The-Buttons.jpg" alt="">
 		</div>
-		<div class=" col-xs-12 col-sm-9 col-md-9 nombre-news">
-			<h1>Dream News</h1>
-			<h2>EL MEJOR BOLETÍN INFORMATIVO</h2>
-			<img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/news/periodico.png" alt="">
+		<div class='container'>
+			<div class='row'>
+				<div class='col-md-12 nombre-news'>
+					<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/dreamlopers_news.png" alt="" />
+				</div>
+			</div>
 		</div>
 	</div>
-	<hr class="gruesa">
+</div>
+<section class="contenedor">
 	<div class="cinta">
 		<hr class="fina">
-		<div class="col-xs-3 col-sm-4 col-md-4 spc">VOL XXXVII</div>
-		<div class="col-xs-5 col-sm-4 col-md-4 text-center">
-			<?php
-				$dias = array("Domingo","Lunes","Martes","Miercoles","Jueves","Viernes","Sábado");
-				 $meses =  array("Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre");
-				 echo $dias[date('w')]." ".date('d')." de ".$meses[date('n')-1]. " del ".date('Y') ;
-			?>
+		<div class="col-xs-12 col-sm-12 col-md-12 text-right spc">
 			<span class="hidden-xs clock99" id="clock">  
 				<script language="javascript">  
 					clock();  
 				</script>
 			</span>
-		</div>
-		<div class="col-xs-3 col-sm-4 col-md-4 text-right spc">
-			<?php echo 'No. 7 / '.dias_res().' D'; ?>
+			<?php
+			$dias = array("Domingo","Lunes","Martes","Miercoles","Jueves","Viernes","Sábado");
+			$meses =  array("Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre");
+			echo ' / '.$dias[date('w')]." ".date('d')." de ".$meses[date('n')-1]. " del ".date('Y') ;
+			?>
+			<?php	//echo ' / '.date('l jS \of F Y').'&nbsp';	?>
+			<?php echo ' / '.dias_res().' D'; ?>
 		</div>
 	</div>
 	<div class="hidden-sm hidden-md hidden-lg"><br></div>
 	<hr class="fina">
 </section>
+<div class="pestanas">
+	<a href="<?php echo get_site_url()."/"; ?>"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/pestana-aspirantes.png" class="img-responsive" alt="Image"></a>
+</div>
+<section class="container">
 <div class="pestanas">
 	<a href="<?php echo get_site_url()."/"; ?>"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/pestana-aspirantes-es.png" class="img-responsive" alt="Image"></a>
 </div>
@@ -49,8 +59,8 @@ get_header("news");
 		<?php while (have_posts()) : the_post(); ?>
 		<div class="col-md-6">
 			<div class="post">
-				<h2 class="post-title" id="post-<?php the_ID(); ?>">
-					<a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title(); ?>"><?php the_title(); ?></a></h2>
+				<a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title(); ?>"><h2 class="post-title" id="post-<?php the_ID(); ?>"><i class="fa fa-newspaper-o twitter" aria-hidden="true"></i>
+					<?php the_title(); ?></h2></a>
 				<small><?php the_time('F jS, Y') ?>  by <?php the_author() ?></small>
 				<div class="post-content">
 					<?php if ( has_post_thumbnail() ) : ?>
@@ -60,9 +70,10 @@ get_header("news");
 						</a>
 					</div>
 					<?php endif; ?>
-					<?php the_content(); ?>
 					<?php the_excerpt(); ?>
 				</div>
+				<div class="post-fin"></div>
+				<div class="text-right mas"><a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title(); ?>">mas...</a></div>
 			</div>
 		</div>
 		<?php endwhile; ?>
