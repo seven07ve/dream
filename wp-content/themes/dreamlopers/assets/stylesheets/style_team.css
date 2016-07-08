@@ -107,7 +107,8 @@ img { max-width: 100%; }
 	width: 100%;
 	display: inline-block;
 	margin: -2px;
-	padding: 14%;
+	padding: 14% 14% 0;
+	cursor:pointer;
 }
 
 .cont-foto{
@@ -208,9 +209,14 @@ img { max-width: 100%; }
 	transition: transform 6s linear .4s, -webkit-transform 6s linear .4s;
 }
 
-.cont-team .fin-team{
+.fin-team{
+	width: 100%;
+	padding: 0px 14%;
+}
+
+.fin-team .rs{
+	width: 100%;
 	background: #FFF;
-	padding: 0px 0px 20px;
 }
 /*---------------------------------------*/
 /***** Media queries *****/
