@@ -23,7 +23,7 @@ get_header("team");
 	<a href="<?php echo get_site_url()."/"; ?>"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/pestana-aspirantes.png" class="img-responsive" alt="Image"></a><br>
 	<a href="<?php echo get_site_url()."/en/category/news/"; ?>"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/pestana-news.png" class="img-responsive" alt="Image"></a>
 </div>
-<!-- Why -->
+<!-- Who we are -->
 <div class='features-container'>
 	<div class='container'>
 		<div class='row'>
@@ -44,7 +44,7 @@ get_header("team");
 		</div>
 	</div>
 </div>
-<!-- How -->
+<!-- Team -->
 <div class='team-container'>
 	<div class='container'>
 		<div class='row'>
@@ -52,114 +52,66 @@ get_header("team");
 				<h1>TEAM</h1>
 			</div>
 			<div class='col-sm-12 col-md-12 col-lg-12'>
+				<?php if (have_posts()) : ?>
+				<?php
+				query_posts( array( 'category_name' => 'team', 'posts_per_page' => 100, 'orderby' => 'post', 'order' => 'ASC' ) );
+				?>
 				<div class="row">
+				<!-----------------inicio-------------->
+					<?php while (have_posts()) : the_post(); ?>
 					<div class="col-md-4">
-						<div class="cont-team">
+						<div class="cont-team"  data-toggle="modal" data-target="#myModal<?php the_ID(); ?>">
 							<div class="cont-foto">
 								<div class="foto">
-									<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/who_we_are/jesus_sonriendo.jpg" alt="">
+									<?php if ( has_post_thumbnail() ) : ?>
+										<?php the_post_thumbnail(); ?>
+									<?php endif; ?>
 								</div>
 							</div>
 							<div class="cont-text">
 								<div class="titulo">
-									<h3>Ing.</h3>
-									<h4>Jesus Salcedo</h4>
+									<h3><?php echo get_post_meta($post->ID, "Puesto", "FALSE"); ?></h3>
+									<h4><?php the_title(); ?></h4>
 								</div>
+							</div>
+						</div>
 								<div class="fin-team">
-									<a class='social-icon' href='https://www.facebook.com/dreamlopers'>
+									<div class="rs">
+										<a class='social-icon' href='<?php echo get_post_meta($post->ID, "Facebook", "FALSE"); ?>'>
 										<i class='fa fa-facebook facebook'></i>
 									</a>
-									<a class='social-icon' href='https://twitter.com/dreamlopers'>
+										<a class='social-icon' href='<?php echo get_post_meta($post->ID, "Twitter", "FALSE"); ?>'>
 										<i class='fa fa-twitter twitter'></i>
 									</a>
-									<a class='social-icon' href=''>
+										<a class='social-icon' href='<?php echo get_post_meta($post->ID, "Linkedin", "FALSE"); ?>'>
 										<i class="fa fa-linkedin linkedin" aria-hidden="true"></i>
 									</a>
+									</div>
+								</div>
+						<!-- Modal -->
+						<div class="modal fade" id="myModal<?php the_ID(); ?>" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+							<div class="modal-dialog modal-lg" role="document">
+								<div class="modal-content">
+									<div class="modal-header">
+										<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+											<span aria-hidden="true">&times;</span>
+										</button>
+										<h4 class="modal-title" id="myModalLabel">Profile</h4>
+									</div>
+									<div class="modal-body">
+										<?php the_content(); ?>
+									</div>
+									<div class="modal-footer">
+										<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+									</div>
 								</div>
 							</div>
 						</div>
 					</div>
-					<div class="col-md-4">
-						<div class="cont-team"  data-toggle="modal" data-target="#myModal">
-							<div class="cont-foto">
-								<div class="foto">
-									<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/who_we_are/ricardo_loco.jpg" alt="">
-								</div>
-							</div>
-							<div class="cont-text">
-								<div class="titulo">
-									<h3>Ing.</h3>
-									<h4>Ricardo</h4>
-								</div>
-							</div>
-						</div>
-						<div class="fin-team">
-							<div class="rs">
-							<a class='social-icon' href='https://www.facebook.com/dreamlopers'>
-								<i class='fa fa-facebook facebook'></i>
-							</a>
-							<a class='social-icon' href='https://twitter.com/dreamlopers'>
-								<i class='fa fa-twitter twitter'></i>
-							</a>
-							<a class='social-icon' href=''>
-								<i class="fa fa-linkedin linkedin" aria-hidden="true"></i>
-							</a>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-4">
-						<div class="cont-team" data-toggle="modal" data-target="#myModal">
-							<div class="cont-foto">
-								<div class="foto">
-									<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/who_we_are/amilcar_sonriendo.jpg" alt="">
-								</div>
-							</div>
-							<div class="cont-text">
-								<div class="titulo">
-									<h3>Ing.</h3>
-									<h4>Amilcar Erazo</h4>
-								</div>
-							</div>
-						</div>
-						<div class="fin-team">
-							<div class="rs">
-								<a class='social-icon' href='https://www.facebook.com/dreamlopers'>
-									<i class='fa fa-facebook facebook'></i>
-								</a>
-								<a class='social-icon' href='https://twitter.com/dreamlopers'>
-									<i class='fa fa-twitter twitter'></i>
-								</a>
-								<a class='social-icon' href=''>
-									<i class="fa fa-linkedin linkedin" aria-hidden="true"></i>
-								</a>
-							</div>
-						</div>
-					</div>
+					<?php endwhile; ?>
+					<!-------------fin--------------->
 				</div>
-			</div>
-		</div>
-	</div>
-</div>
-<!-- Button trigger modal -->
-<!--<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
-	Launch demo modal
-</button>-->
-
-<!-- Modal -->
-<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-	<div class="modal-dialog" role="document">
-		<div class="modal-content">
-			<div class="modal-header">
-				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-					<span aria-hidden="true">&times;</span>
-				</button>
-				<h4 class="modal-title" id="myModalLabel">Modal title</h4>
-			</div>
-			<div class="modal-body">
-				...
-			</div>
-			<div class="modal-footer">
-				<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+				<?php endif; ?>
 			</div>
 		</div>
 	</div>

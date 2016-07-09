@@ -72,14 +72,6 @@ get_header("news");
 	<hr class="fina">
 	<?php wpbeginner_numeric_posts_nav(""); ?>
 
-<!--	<div class="navigation">
-		<div class="alignleft">
-			<?php //posts_nav_link('','','&laquo; Previous Entries') ?>
-		</div>
-		<div class="alignright">
-			<?php //posts_nav_link('','Next Entries &raquo;','') ?>
-		</div>
-	</div>-->
 <?php else : ?>
 	<h2 class="center">Not Found</h2>
 	<p class="center"><?php _e("Sorry, but you are looking for something that isn't here."); ?></p>
