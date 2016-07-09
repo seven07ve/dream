@@ -943,21 +943,9 @@ color: #888;
 	-o-box-shadow: 0 1px 2px rgba(0,0,0,0.2);
     box-shadow: 0 1px 2px rgba(0,0,0,0.2);
 	background-color: #fff;
-	padding: 25px 15px 15px 15px;
 	position: relative;
 }
 
-
-.price-column h2 {
-	color:#fff;
-	font-size:32px;
-	text-align:center;
-	background: #323A45;
-	margin-bottom: 0;
-	padding:30px 0;
-	font-weight: 400;
-    font-family: 'Dosis', sans-serif;
-}
 
 .price-column h3 {
 	color:#555;
@@ -1002,17 +990,127 @@ color: #888;
 	margin-bottom: 50px;
 }
 
-.price-column.large h2 {
+/*.price-column.large h2 {
 	padding: 30px 0;
 	background: #0DC0C0;
-}
+}*/
 
 .price-column.large h3 {
 	padding: 40px 0;
 }
 
+.mira{
+	text-align: center;
+	font-weight: bolder;
+	position: relative;
+	width: 100%;
+	height: 360px;
+	display: inline-block;
+	vertical-align: middle;
+}
 
+.shool{
+	background: url(../images/what/astronautas.jpg);
+	background-position: center;
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
 
+.lab{
+	background: url(../images/what/propulsores.jpg);
+	background-position: center;
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+
+.builder{
+	background: url(../images/what/columbia.jpg);
+	background-position: center;
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+
+.cext{
+	width: 100%;
+	height: 100%;
+	background-image: url(../images/what/cext.png);
+	background-position: center;
+	background-size: 90%;
+	background-repeat: no-repeat;
+	-webkit-transform: scale(.3);
+	transform: scale(.3);
+	opacity: .1;
+}
+.cint{
+	width: 100%;
+	height: 100%;
+	background-image: url(../images/what/cint.png);
+	background-position: center;
+	background-size: auto;
+	background-repeat: no-repeat;
+	-webkit-transform: scale(.3);
+	transform: scale(.3);
+	opacity: .1;
+}
+/*.price-column .d-text h2{
+	float: left;
+	
+	text-align: center;
+	width: 100%;
+}*/
+
+.price-column h2{
+	font-family: 'Dosis', sans-serif;
+	font-size: 40px;
+	font-weight: 400;
+	color: #dedede;
+	margin-top: -60%;
+	-webkit-transition: 2s;
+	transition: 2s;
+}
+
+.price-column:hover h2{
+	color: #FFF;
+	text-shadow: 0 0 15px #fff;
+	background-color: rgba(0, 0, 0,.8);
+}
+.price-column:hover .cext{
+	-webkit-animation: 2s rota 1;
+}
+
+.price-column:hover .cint{
+	-webkit-animation: 1s antirota 2;
+}
+
+@-webkit-keyframes rota{
+	50%{
+		-webkit-transform: rotate(180deg) ;
+		transform: rotate(180deg) ;	
+		opacity: .5;
+	}
+	100%{
+		opacity: 1;
+		-webkit-transform: rotate(360deg) ;
+		transform: rotate(360deg) ;	
+	}
+}
+@-webkit-keyframes antirota{
+	50%{
+		opacity: .5;
+		-webkit-transform: scale(.5);
+		transform: scale(.5);
+		-webkit-transform: rotate(-180deg) ;
+		transform: rotate(-180deg) ;	
+
+	}
+	100%{
+		opacity: .8;
+		-webkit-transform: scale(1);
+		transform: scale(1);
+		-webkit-transform: rotate(-360deg) ;
+		transform: rotate(-360deg) ;	
+	}
+}
 
 
 /***** Portfolio *****/

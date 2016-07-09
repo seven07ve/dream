@@ -174,7 +174,7 @@ hr.fina{
 
 .pestanas{
 	float:right;
-	margin-top: -100px;
+	margin-top: -250px;
 }
 /*-------------menu---------------------*/
 
@@ -396,8 +396,8 @@ hr.fina{
 @media (max-width: 540px) {
 	.pestanas{
 		float:right;
-		margin-top: -200px;
-		width: 20%;
+		margin-top: -350px;
+		width: 25%;
 	}
 	.navbar-default.menu-top li a{
 		color: #323A45 !important;

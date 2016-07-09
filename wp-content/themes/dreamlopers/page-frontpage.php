@@ -198,7 +198,14 @@ get_header("home");
 		<div class='row'>
 			<div class='col-md-4 toLeft'>
 				<div class='price-column'>
-					<h2>DreamSchool</h2>
+					<div class="mira shool">
+						<div class="cext">
+							<div class="cint">
+
+							</div>
+						</div>
+						<h2>DreamSchool</h2>
+					</div>
 					<ul>
 						<li>A place where we can learn from the experience of others and helping each other .</li>
 						<li>In DreamSchool we allow you to guide your dreams, improve it and give it start</li>
@@ -216,7 +223,14 @@ get_header("home");
 			</div>
 			<div class='col-md-4 toIn'>
 				<div class='price-column large'>
-					<h2>DreamLabs</h2>
+					<div class="mira lab">
+						<div class="cext">
+							<div class="cint">
+
+							</div>
+						</div>
+						<h2>DreamLabs</h2>
+					</div>
 					<ul>
 						<li>Our factory</li>
 						<li>From our imagination, wishes and ideas, we built our dreams from the ground up.</li>
@@ -234,7 +248,14 @@ get_header("home");
 			</div>
 			<div class='col-md-4 toRight'>
 				<div class='price-column'>
-					<h2>DreamBuilder</h2>
+					<div class="mira builder">
+						<div class="cext">
+							<div class="cint">
+
+							</div>
+						</div>
+						<h2>DreamBuilder</h2>
+					</div>
 					<ul>
 						<li>Our customers are part of what we do, so for them and their dreams we have created this section.</li>
 						<li>We seek to achieve the best with the best tools.</li>
