@@ -1076,10 +1076,12 @@ color: #888;
 }
 .price-column:hover .cext{
 	-webkit-animation: 2s rota 1;
+	animation: 2s rota 1;
 }
 
 .price-column:hover .cint{
 	-webkit-animation: 1s antirota 2;
+	animation: 2s antirota 1;
 }
 
 @-webkit-keyframes rota{
