@@ -114,6 +114,9 @@ img { max-width: 100%; }
 	transform: scale(.5);
 }
 
+.esconde{
+	display: none;
+}
 
 /***** Media queries *****/
 

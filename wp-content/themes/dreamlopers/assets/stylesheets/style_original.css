@@ -364,6 +364,17 @@ color: #888;
     background-position: center center;
 }
 
+.top-social {
+	margin: 0 auto;
+	text-align: center;
+	color: #fff;
+	background: url("../images/backgrounds/sky.jpg");
+	background-size: cover;
+	/*background-position: center 920px;*/
+	background-attachment: fixed;
+	background-position: center center;
+}
+
 .inner-bg {
     padding: 0;
 	padding-top: 180px;
@@ -1096,6 +1107,18 @@ color: #888;
 		transform: rotate(360deg) ;	
 	}
 }
+@keyframes rota{
+	50%{
+		-webkit-transform: rotate(180deg) ;
+		transform: rotate(180deg) ;	
+		opacity: .5;
+	}
+	100%{
+		opacity: 1;
+		-webkit-transform: rotate(360deg) ;
+		transform: rotate(360deg) ;	
+	}
+}
 @-webkit-keyframes antirota{
 	50%{
 		opacity: .5;
@@ -1113,7 +1136,23 @@ color: #888;
 		transform: rotate(-360deg) ;	
 	}
 }
+@keyframes antirota{
+	50%{
+		opacity: .5;
+		-webkit-transform: scale(.5);
+		transform: scale(.5);
+		-webkit-transform: rotate(-180deg) ;
+		transform: rotate(-180deg) ;	
 
+	}
+	100%{
+		opacity: .8;
+		-webkit-transform: scale(1);
+		transform: scale(1);
+		-webkit-transform: rotate(-360deg) ;
+		transform: rotate(-360deg) ;	
+	}
+}
 
 /***** Portfolio *****/
 
@@ -1665,6 +1704,26 @@ color: #0dc0c0;
 			scaleX(1.15) scaleY(0.85);
 	}
 }
+@keyframes chicle{
+	30%{
+		-webkit-transform: 
+			scaleX(1.25) scaleY(0.75);
+		transform: 
+			scaleX(1.25) scaleY(0.75);
+	}
+	50%{
+		-webkit-transform: 
+			scaleX(0.75) scaleY(1.45);
+		transform: 
+			scaleX(0.75) scaleY(1.45);
+	}
+	60%{
+		-webkit-transform: 
+			scaleX(1.15) scaleY(0.85);
+		transform: 
+			scaleX(1.15) scaleY(0.85);
+	}
+}
 .pestanas{
 	position: fixed;
 	right: 0;
@@ -1692,6 +1751,21 @@ color: #0dc0c0;
 @-webkit-keyframes palpitar {
 	0% {
 		
+		-webkit-transform:scaleY(.9);
+		transform:scaleY(.9);
+	}
+	50%{
+		-webkit-transform:scaleY(1.2);
+		transform:scaleY(1.2);
+	}
+	100% {
+		-webkit-transform:scaleY(.9);
+		transform:scaleY(.9);
+	}
+}
+@keyframes palpitar {
+	0% {
+
 		-webkit-transform:scaleY(.9);
 		transform:scaleY(.9);
 	}
