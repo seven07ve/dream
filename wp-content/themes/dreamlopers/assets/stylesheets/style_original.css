@@ -1644,6 +1644,29 @@ color: #0dc0c0;
 	-webkit-animation: 1s chicle;
 }
 
+.rs{
+	padding: 0 7% 7%;	
+}
+
+.rs .social-icon :hover {
+	-webkit-transition: all .3s;
+	transition: all .3s;
+	-webkit-animation: 1s rebote infinite;
+	animation: 1s rebote infinite;
+}
+
+.rs .social-icon {
+	text-align: center;
+	font-size: 46px;
+	line-height: 76px;
+	color: #323A45;
+	padding: 5%;
+	-webkit-transition: all .3s;
+	transition: all .3s;
+	margin: 0px;
+	line-height: 50px;
+}
+
 .social-icon .facebook:hover {
 	color: #3B5998;
 }
@@ -1676,6 +1699,18 @@ color: #0dc0c0;
 	-webkit-text-fill-color: transparent;
 }
 
+/*====== seccion redes sociales ======*/
+.rs .social-icon .youtube:hover {
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+25,c12226+51,c12226+100 */
+	background: #000; /* Old browsers */ /* FF3.6-15 */
+	background: -webkit-linear-gradient(top,  #000000 0%,#000000 35%,#c12226 51%,#c12226 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,  #000000 0%,#000000 35%,#c12226 51%,#c12226 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#c12226',GradientType=0 ); /* IE6-9 */
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+/*=============================*/
+
 .social-icon .snapchat:hover {
 	color: #FFFC01;
 }
@@ -1683,7 +1718,46 @@ color: #0dc0c0;
 .social-icon .skype:hover {
 	color: #00ADEF;
 }
-
+@-webkit-keyframes rebote{
+	25%{
+		-webkit-transform: translateY(-15px);
+		transform: translateY(-15px);
+		-webkit-transition-duration: 0.4s;
+		transition-duration: 0.4s;
+	}
+	50%{
+		-webkit-transform: translateY(0px);
+		transform: translateY(0px);
+		-webkit-transition-duration: 0.4s;
+		transition-duration: 0.4s;
+	}
+	75%{
+		-webkit-transform: translateY(-10px);
+		transform: translateY(-10px);
+		-webkit-transition-duration: 0.4s;
+		transition-duration: 0.4s;
+	}
+}
+@keyframes rebote{
+	25%{
+		-webkit-transform: translateY(-15px);
+		transform: translateY(-15px);
+		-webkit-transition-duration: 0.4s;
+		transition-duration: 0.4s;
+	}
+	50%{
+		-webkit-transform: translateY(0px);
+		transform: translateY(0px);
+		-webkit-transition-duration: 0.4s;
+		transition-duration: 0.4s;
+	}
+	75%{
+		-webkit-transform: translateY(-10px);
+		transform: translateY(-10px);
+		-webkit-transition-duration: 0.4s;
+		transition-duration: 0.4s;
+	}
+}
 @-webkit-keyframes chicle{
 	30%{
 		-webkit-transform: 

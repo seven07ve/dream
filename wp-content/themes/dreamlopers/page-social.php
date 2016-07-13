@@ -30,9 +30,31 @@ get_header("home");
 					SOCIAL?
 				</h1>
 			</div>
-			<div class='col-sm-12 features'>
+			<div class='col-sm-12 rs'>
+				<a class='social-icon' href='https://www.facebook.com/dreamlopers'>
+					<i class='fa fa-facebook facebook'></i>
+				</a>
+				<a class='social-icon' href='https://twitter.com/dreamlopers'>
+					<i class='fa fa-twitter twitter'></i>
+				</a>
+				<a class='social-icon' href=''>
+					<i class="fa fa-instagram instagram" aria-hidden="true"></i>
+				</a>
+				<a class='social-icon' href=''>
+					<i class="fa fa-linkedin linkedin" aria-hidden="true"></i>
+				</a>
+				<a class='social-icon' href=''>
+					<i class="fa fa-youtube youtube" aria-hidden="true"></i>
+				</a>
+				<a class='social-icon' href=''>
+					<i class="fa fa-snapchat-ghost snapchat" aria-hidden="true"></i>
+				</a>
+				<a class='social-icon' href=''>
+					<i class="fa fa-skype skype" aria-hidden="true"></i>
+				</a>
 			</div>
 		</div>
+
 		<?php the_content(); ?>
 	</div>
 </div>
