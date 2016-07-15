@@ -29,6 +29,7 @@ get_header("tips");
 			<div class='row'>
 				<div class='col-xs-12 text-center'>
 					<h1>Tips</h1>
+					<p>asd sad ad a ss a dds  sa sd sd dsa sad ds sdd saa  as sds dsad  sadas d ds as dsd ad sdd dasas  sa ad dsd  s dads s  sad     a sad asdas das da sd asd asd asd</p>
 				</div>
 			</div>
 		</div>

@@ -1,4 +1,10 @@
 <?php
+//para usar las librerias de los dos idiomas
+function dreamlopers_lang_setup() {
+	load_theme_textdomain('dreamlopers', get_template_directory() . '/languages');
+}
+//para activar la funcion
+add_action( 'after_setup_theme', 'dreamlopers_lang_setup' );
 // Registro del menú de WordPress
 
 add_theme_support( 'nav-menus' );

@@ -77,15 +77,23 @@ get_header("equipo");
 						</div>
 						<div class="fin-team">
 							<div class="rs">
-								<a class='social-icon' href='<?php echo get_post_meta($post->ID, "Facebook", "FALSE"); ?>'>
-									<i class='fa fa-facebook facebook'></i>
-								</a>
-								<a class='social-icon' href='<?php echo get_post_meta($post->ID, "Twitter", "FALSE"); ?>'>
-									<i class='fa fa-twitter twitter'></i>
-								</a>
-								<a class='social-icon' href='<?php echo get_post_meta($post->ID, "Linkedin", "FALSE"); ?>'>
-									<i class="fa fa-linkedin linkedin" aria-hidden="true"></i>
-								</a>
+							<?php
+								if (get_post_meta($post->ID, "Facebook", "FALSE") <> ""){
+									echo "<a class='social-icon' href='".get_post_meta($post->ID, "Facebook", "FALSE")."'  target='_blank'>
+										<i class='fa fa-facebook facebook'></i>
+										</a>";
+								}
+								if (get_post_meta($post->ID, "Twitter", "FALSE") <> ""){
+									echo "<a class='social-icon' href='".get_post_meta($post->ID, "Twitter", "FALSE")."'  target='_blank'>
+										<i class='fa fa-twitter twitter'></i>
+										</a>";
+								}
+								if (get_post_meta($post->ID, "Linkedin", "FALSE") <> ""){
+									echo "<a class='social-icon' href='".get_post_meta($post->ID, "Linkedin", "FALSE")."'  target='_blank'>
+								<i class='fa fa-linkedin linkedin' aria-hidden='true'></i>
+								</a>";
+								}
+								?>
 							</div>
 						</div>
 						<!-- Modal -->

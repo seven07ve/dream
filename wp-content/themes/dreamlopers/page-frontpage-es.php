@@ -209,8 +209,8 @@ get_header("home");
 
 							</div>
 						</div>
-						<h2>DreamSchool</h2>
 					</div>
+					<h2>DreamSchool</h2>
 					<ul>
 						<li>A place where we can learn from the experience of others and helping each other .</li>
 						<li>In DreamSchool we allow you to guide your dreams, improve it and give it start</li>
@@ -234,8 +234,8 @@ get_header("home");
 
 							</div>
 						</div>
-						<h2>DreamLabs</h2>
 					</div>
+					<h2>DreamLabs</h2>
 					<ul>
 						<li>Our factory</li>
 						<li>From our imagination, wishes and ideas, we built our dreams from the ground up.</li>
@@ -259,8 +259,8 @@ get_header("home");
 
 							</div>
 						</div>
-						<h2>DreamBuilder</h2>
 					</div>
+					<h2>DreamBuilder</h2>
 					<ul>
 						<li>Our customers are part of what we do, so for them and their dreams we have created this section.</li>
 						<li>We seek to achieve the best with the best tools.</li>

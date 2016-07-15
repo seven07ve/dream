@@ -1,8 +1,8 @@
 <footer id='footer2'>
 	<div class='container'>
 		<div class='row'>
-			<div class="col-sm-4"><?php wp_nav_menu( array('menu' => 'footer', 'container' => 'nav' )); ?></div>
-			<div class='col-sm-4'>
+			<div class="col-xs-12 col-sm-12 col-md-4 text-center"><?php wp_nav_menu( array('menu' => 'footer', 'container' => 'nav' )); ?></div>
+			<div class='col-xs-12 col-sm-12 col-md-4'>
 				<div class='copyright'>
 					© <?php bloginfo('name'); ?>
 					<?=date('Y');?>
@@ -12,7 +12,7 @@
 					<i class='fa fa-rocket fa-3x'></i>
 				</div>
 			</div>
-			<div class="col-sm-4">
+			<div class="col-xs-12 col-sm-12 col-md-4">
 				<a class='social-icon' href='https://www.facebook.com/dreamlopers'>
 					<i class='fa fa-facebook facebook'></i>
 				</a>
