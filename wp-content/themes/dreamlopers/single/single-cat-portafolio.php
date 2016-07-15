@@ -12,27 +12,42 @@ get_header("portfolio");
 	display: none;
 }
 </style>
-<section class="container">
-	<?php if (have_posts()) : ?>
-	<div class="row">
+<div class="cbp-popup-wrap cbp-popup-singlePage cbp-popup-singlePage-open cbp-popup-transitionend cbp-popup-singlePage-sticky cbp-popup-ready" data-action="" style="display: block;">
+	<div class="cbp-popup-content">
+		<?php if (have_posts()) : ?>
 		<?php while (have_posts()) : the_post(); ?>
-		<div class="col-md-12">
-			<div class="post-entrada">
-				<h2 class="" id="post-<?php the_ID(); ?>">
-					<?php the_title(); ?></h2>
-				<div class="post-content">
-					<?php if ( has_post_thumbnail() ) : ?>
-					<div class="post-thumbnail" style="padding:3% 3% 3% 0;">
-						<?php the_post_thumbnail(); ?>
-					</div>
-					<?php endif; ?>
-					<div style="padding-right:7%;"><?php the_content(); ?></div>
+		<div class="cbp-l-project-title"><?php the_title(); ?></div>
+		<div class="cbp-l-project-subtitle">
+			<?php 
+			$reemplazo = get_post_meta($post->ID, "Portafolio-area", "FALSE");
+			echo str_replace(" ", " / ", $reemplazo);	
+			?>
+		</div>
+		<?php
+		//obtener la url de la imagen
+		//$img_id = get_post_thumbnail_id();
+		//$original_img = wp_get_attachment_image_src ($img_id, 'original');
+		?>
+		<?php if ( has_post_thumbnail() ) : ?>
+		<div class="post-thumbnail text-center" style="padding:3% 3% 3% 0;">
+			<?php the_post_thumbnail(); ?>
+		</div>
+		<?php endif; ?>
+		<div class="cbp-l-project-container">
+			<div class="cbp-l-project-desc" style="width:100%;">
+				<div class="cbp-l-project-desc-text">
+					<?php
+					the_content();
+					?>
 				</div>
 			</div>
+
 		</div>
+		<br><br><br>
+
+
+
 		<?php endwhile; ?>
-	</div><br>
-	<hr>
-	<br><br>
-	<?php endif; ?>
-</section>
+		<?php endif; ?>
+	</div>
+</div>

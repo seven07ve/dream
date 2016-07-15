@@ -29,7 +29,7 @@
 	height:100%;
 	top:0;
 	left:0;
-	background:url("../img/cbp-loading.gif") no-repeat scroll center center transparent
+	background:url("../images/cbp-loading.gif") no-repeat scroll center center transparent
 }
 .cbp>* {
 	visibility:hidden
@@ -2501,7 +2501,7 @@
 	visibility:visible
 }
 .cbp-popup-lightbox .cbp-popup-prev {
-	background:url("../img/cbp-sprite.png") no-repeat scroll 0 0 transparent;
+	background:url("../images/cbp-sprite.png") no-repeat scroll 0 0 transparent;
 	width:44px;
 	height:44px;
 	top:0;
@@ -2513,7 +2513,7 @@
 	background-position:0 -46px
 }
 .cbp-popup-singlePage .cbp-popup-prev {
-	background:url("../img/cbp-sprite.png") no-repeat scroll 0 -92px transparent;
+	background:url("../images/cbp-sprite.png") no-repeat scroll 0 -92px transparent;
 	width:44px;
 	height:44px;
 	margin:auto;
@@ -2526,7 +2526,7 @@
 	background-position:0 -138px
 }
 .cbp-popup-lightbox .cbp-popup-next {
-	background:url("../img/cbp-sprite.png") no-repeat scroll -46px 0 transparent;
+	background:url("../images/cbp-sprite.png") no-repeat scroll -46px 0 transparent;
 	width:44px;
 	height:44px;
 	top:0;
@@ -2538,7 +2538,7 @@
 	background-position:-46px -46px
 }
 .cbp-popup-singlePage .cbp-popup-next {
-	background:url("../img/cbp-sprite.png") no-repeat scroll -46px -92px transparent;
+	background:url("../images/cbp-sprite.png") no-repeat scroll -46px -92px transparent;
 	width:44px;
 	height:44px;
 	margin:auto;
@@ -2551,7 +2551,7 @@
 	background-position:-46px -138px
 }
 .cbp-popup-lightbox .cbp-popup-close {
-	background:url("../img/cbp-sprite.png") no-repeat scroll -92px 0 transparent;
+	background:url("../images/cbp-sprite.png") no-repeat scroll -92px 0 transparent;
 	height:40px;
 	width:40px;
 	right:20px;
@@ -2561,7 +2561,7 @@
 	background-position:-92px -46px
 }
 .cbp-popup-singlePage .cbp-popup-close {
-	background:url("../img/cbp-sprite.png") no-repeat scroll -92px -92px transparent;
+	background:url("../images/cbp-sprite.png") no-repeat scroll -92px -92px transparent;
 	height:44px;
 	width:44px;
 	margin:auto;
@@ -2606,7 +2606,7 @@
 	bottom:0;
 	margin:auto;
 	z-index:2;
-	background:url("../img/cbp-loading-popup.gif") no-repeat scroll center center #0D0D0D;
+	background:url("../images/cbp-loading-popup.gif") no-repeat scroll center center #0D0D0D;
 	border:1px solid rgba(79, 80, 79, 0.3);
 	border-radius:3px;
 	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=71)";
@@ -2719,7 +2719,7 @@
 	padding:0 5px 0 0
 }
 .cbp-l-project-desc-text {
-	font:400 13px/20px"Open Sans", sans-serif;
+	font:400 16px"Open Sans", sans-serif;
 	color:#555;
 	margin-bottom:20px
 }
@@ -2885,7 +2885,7 @@
 	height:40px
 }
 .cbp-popup-singlePageInline .cbp-popup-close {
-	background:url("../img/cbp-sprite.png") no-repeat scroll -92px 0 transparent;
+	background:url("../images/cbp-sprite.png") no-repeat scroll -92px 0 transparent;
 	height:40px;
 	width:40px;
 	right:20px;
@@ -3089,7 +3089,7 @@
 	bottom:0;
 	left:0;
 	margin:auto;
-	background:url("../img/cbp-sprite.png") no-repeat;
+	background:url("../images/cbp-sprite.png") no-repeat;
 	height:10px;
 	width:7px
 }
@@ -3165,7 +3165,7 @@
 	right:auto
 }
 .cbp-slider .cbp-nav-next:after, .cbp-slider .cbp-nav-prev:after {
-	background:url("../img/cbp-sprite.png") no-repeat;
+	background:url("../images/cbp-sprite.png") no-repeat;
 	width:44px;
 	height:44px
 }
@@ -3208,7 +3208,7 @@
 	right:auto
 }
 .cbp-slider-edge .cbp-nav-next:after, .cbp-slider-edge .cbp-nav-prev:after {
-	background:url("../img/cbp-sprite.png") no-repeat;
+	background:url("../images/cbp-sprite.png") no-repeat;
 	width:9px;
 	height:16px
 }
@@ -3624,7 +3624,6 @@
 	text-align:center;
 	max-width:1000px;
 	margin:0 auto 40px auto;
-	border-bottom:dashed 3px #48cbfd;
 	padding-bottom:40px;
 	color:#333
 }
@@ -3645,9 +3644,12 @@
 	position:relative;
 	cursor:pointer;
 	overflow:hidden;
-	border:solid 1px #e7e7e7;
 	background-color:#FFF;
-	box-sizing:border-box
+	box-sizing:border-box;
+	border-bottom:dashed 3px transparent;
+}
+.listados a.cuadros {
+	border-bottom:dashed 3px #000;
 }
 .come-in {
 	-webkit-transform:translateY(150px);
@@ -3680,7 +3682,7 @@
 		float:left;
 		width:48%;
 		height:440px;
-		margin:0 4% 2% 0
+		margin:0 4% 2% 0;
 	}
 	.listados a.item:nth-of-type(2n) {
 		margin-right:0
@@ -3691,7 +3693,7 @@
 		float:none;
 		width:100%;
 		height:550px;
-		margin:0 0 20px 0
+		margin:0 0 20px 0;
 	}
 	.listados a.item:nth-of-type(2n) {
 		margin-right:0
@@ -3703,7 +3705,7 @@
 .listados a.item #info {
 	box-sizing:border-box;
 	text-align:left;
-	padding:15px
+	padding:10px;
 }
 .listados a.item #info #titulo {
 	font-family:bold2;
@@ -3771,18 +3773,21 @@
 	}
 }
 
+.listados a.item:hover {
+	border-bottom:dashed 3px #48cbfd;
+}
+
 .listados a.item:hover .tapita {
-	-webkit-transition-delay: .5s;
-	transition-delay: .5s;
 	top:-100%
 }
+
 .listados a.vuelva:hover .tapita {
 	top:0
 }
-.listados a.item:hover .tapita .tabs {
+/*.listados a.item:hover .tapita .tabs {
 	-webkit-animation: .4s parpadea;
 	animation: .4s parpadea;
-}
+}*/
 .listados a.item:hover .tapita .tabs h4{
 	opacity: 1;
 }
@@ -3812,7 +3817,7 @@
 	padding:25px;
 	position:absolute;
 	text-transform:uppercase;
-	top:15%;
+	top:35%;
 	width:100%;
 	z-index:2
 }
@@ -3851,9 +3856,7 @@
 	position:absolute;
 	display:block;
 	content:"";
-	/*background-color:#497dfd;*/
-	background: url(../images/bg-tapita.png) no-repeat center center;
-	background-size: 100% 100%;
+	background-color:#497dfd;
 	opacity:0.9;
 	-webkit-transition:all 0.3s ease-out 0s;
 	transition:all 0.3s ease-out 0s;

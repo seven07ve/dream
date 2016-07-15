@@ -44,7 +44,9 @@ get_header("tips");
 				$link_post = the_permalink();
 			}
 			?>
+			
 			<a class='item' href='<?php echo $link_post; ?>' target='blank' title='<?php the_title(); ?>'>
+				<div class="cuadros">
 				<div class='tapita'>
 				<div class="tabs">
 				</div>
@@ -64,7 +66,8 @@ get_header("tips");
 					<div id='titulo'><?php the_title(); ?></div>
 					<div id='resumen'><?php the_excerpt();	?></div>
 				</div>
-			</a>
+				</div>
+				</a>
 			<?php endwhile; ?>
 			<?php endif; ?>
 		</div>

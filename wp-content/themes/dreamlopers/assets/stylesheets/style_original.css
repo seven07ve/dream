@@ -1099,6 +1099,7 @@ color: #888;
 	font-weight: 400;
 	color: #FFF;
 	background-color: rgba(0, 0, 0,.8);
+	margin: 0px;
 	-webkit-transition: 2s;
 	transition: 2s;
 }
