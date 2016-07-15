@@ -4,7 +4,6 @@
 */
 get_header("news");
 ?>
-
 <div class="homepage-hero-module">
 		<div class="video-container">
 			<div class="filter"></div>

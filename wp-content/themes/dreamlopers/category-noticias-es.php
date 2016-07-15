@@ -48,10 +48,6 @@ get_header("news");
 	<a href="<?php echo get_site_url()."/"; ?>"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/pestana-aspirantes.png" class="img-responsive" alt="Image"></a>
 </div>
 <section class="container">
-<div class="pestanas">
-	<a href="<?php echo get_site_url()."/"; ?>"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/pestana-aspirantes-es.png" class="img-responsive" alt="Image"></a>
-</div>
-<section class="container">
 	<?php if (have_posts()) : ?>
 	<div class="row">
 		<div class="col-md-6"></div>
@@ -81,19 +77,11 @@ get_header("news");
 	<hr class="fina">
 	<?php wpbeginner_numeric_posts_nav("es"); ?>
 
-	<!--	<div class="navigation">
-<div class="alignleft">
-<?php //posts_nav_link('','','&laquo; Previous Entries') ?>
-</div>
-<div class="alignright">
-<?php //posts_nav_link('','Next Entries &raquo;','') ?>
-</div>
-</div>-->
 	<?php else : ?>
 	<h2 class="center">Not Found</h2>
 	<p class="center"><?php _e("Sorry, but you are looking for something that isn't here."); ?></p>
 	<?php endif; ?>
-</section>
+	</section>
 <?php //the_post(); ?>
 <?php //the_content(); ?>
 

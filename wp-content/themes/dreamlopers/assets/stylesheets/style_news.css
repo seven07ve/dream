@@ -220,8 +220,6 @@ hr.fina{
 
 .post-content{
 	margin-top: 5%;
-	max-height: 400px;
-	/*min-height: 335px;*/
 	overflow: hidden;
 }
 
@@ -287,6 +285,15 @@ hr.fina{
 .post-thumbnail img:hover{
 	-webkit-transform: scale(1.1);
 	transform: scale(1.1);
+}
+
+.back{
+	font-size: 36px;
+}
+.back:hover{
+	-webkit-transition: .3s;
+	transition: .3s;
+	color: #0dc0c0;
 }
 /*----------------------------------------*/
 /*-------------estilos para paginacion-------*/

@@ -1836,9 +1836,12 @@ color: #0dc0c0;
 }
 .pestanas img{
 	float: right;
+	width: 100%;
 	margin-bottom: 10px;
 	-webkit-animation: palpitar 2.8s infinite linear;
 	animation: palpitar 2.8s infinite linear;
+	transition: all 0.4s ease-in-out;
+	-webkit-transition: all 0.4s ease-in-out;
 }
 .mini-pestanas img{
 	float: right;
@@ -1846,6 +1849,8 @@ color: #0dc0c0;
 	margin-bottom: 10px;
 	-webkit-animation: palpitar 2.8s infinite linear;
 	animation: palpitar 2.8s infinite linear;
+	transition: all 0.4s ease-in-out;
+	-webkit-transition: all 0.4s ease-in-out;
 }
 @-webkit-keyframes palpitar {
 	0% {

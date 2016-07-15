@@ -72,12 +72,13 @@ get_header("news");
 		<?php endwhile; ?>
 	</div><br>
 	<hr class="fina">
-	<br><br>
-
+	<br>
 	<?php else : ?>
 	<h2 class="center">Not Found</h2>
 	<p class="center"><?php _e("Lo siento, pero lo que buscas no está aquí."); ?></p>
 	<?php endif; ?>
+	<div class="text-right"><a href="" class="back"><i class="fa fa-arrow-circle-o-left back" aria-hidden="true" onclick="window.history.back()"></i></a></div>
+	<br>
 </section>
 
 <?php
