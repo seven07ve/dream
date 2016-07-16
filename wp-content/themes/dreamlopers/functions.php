@@ -20,11 +20,13 @@ if ( function_exists( 'register_nav_menus' ) ) {
 //  Main Sidebar
 if(function_exists('register_sidebar'))
 	register_sidebar(array(
-		'name' => 'Main Sidebar',
-		'before_widget' => '<hr>',
-		'after_widget' => '',
-		'before_title' => '<h3>',
-		'after_title' => '</h3>',
+		'name' => 'News Sidebar',
+		'before_widget' => '<li>',
+		'after_widget' => '</li>',
+		'before_title' => '<h2 class="post-title">',
+		'after_title' => '</h2>',
+		'after_title' => '<hr>',
+		
 ));
 
 //Agregar soporte para imagen destacada

@@ -13,6 +13,7 @@
 	<link href="<?php echo get_stylesheet_directory_uri(); ?>/assets/bootstrap/css/bootstrap-theme.min.css" rel="stylesheet" type="text/css">
 	<link href="<?php echo get_stylesheet_directory_uri(); ?>/assets/bootstrap/css/ionicons.min.css" rel="stylesheet" type="text/css">
 	<script src="https://use.fontawesome.com/757787c1cd.js"></script>
+	<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
 	<!--styles-->
 	<link rel="stylesheet" media="all" href="<?php echo get_stylesheet_directory_uri(); ?>/assets/stylesheets/style_original.css" />
 	<link rel="stylesheet" media="all" href="<?php echo get_stylesheet_directory_uri(); ?>/assets/stylesheets/style_news.css" />

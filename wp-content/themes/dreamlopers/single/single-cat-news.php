@@ -7,20 +7,16 @@ Single Post Template: Dreamlopers News
  */
 get_header("news");
 ?>
-<div class="homepage-hero-module">
-	<div class="video-container">
-		<div class="filter"></div>
-		<video autoplay loop class="fillWidth">
-			<source src="<?php echo get_stylesheet_directory_uri(); ?>/assets/videos/MP4/Push-The-Buttons.mp4" type="video/mp4" />Your browser does not support the video tag. I suggest you upgrade your browser.
-			<source src="<?php echo get_stylesheet_directory_uri(); ?>/assets/videos/WEBM/Push-The-Buttons.webm" type="video/webm" />Your browser does not support the video tag. I suggest you upgrade your browser.
-		</video>
-		<div class="poster hidden">
-			<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/news/Push-The-Buttons.jpg" alt="">
-		</div>
+<div class='parallax top-content news-bg' data-stellar-background-ratio='0.3' id='home'>
+	<div class='inner-bg'>
 		<div class='container'>
 			<div class='row'>
-				<div class='col-md-12 nombre-news'>
+				<div class='col-md-12 '>
 					<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/dreamlopers_news.png" alt="" />
+					<br>
+					<br>
+					<br>
+					<br>
 				</div>
 			</div>
 		</div>
