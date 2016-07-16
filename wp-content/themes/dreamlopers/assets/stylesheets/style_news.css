@@ -197,7 +197,6 @@ hr.fina{
 
 .post-title i{
 	font-size: 50px;
-	height: 50px;
 }
 
 .post-title-entrada {
@@ -237,7 +236,7 @@ hr.fina{
 }
 
 .post-content{
-	margin-top: 5%;
+	margin-top: 3%;
 	overflow: hidden;
 }
 
@@ -246,9 +245,23 @@ hr.fina{
 	text-align: justify;
 	padding: 10px;
 }
+
+.post-entrada .datos{
+	margin-top: 20px;
+}
+
+.post-entrada small i{
+	color: #bbb;
+}
+
 .post-entrada .post-content{
 	margin-top: 5%;
 	height: auto;
+}
+
+hr.entrada{
+	margin: 15px 0px;
+	border-top: 1px solid #ddd;
 }
 
 ::-moz-selection {

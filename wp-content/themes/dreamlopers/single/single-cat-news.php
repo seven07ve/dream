@@ -26,7 +26,7 @@ get_header("news");
 	<div class="cinta">
 		<hr class="fina">
 		<div class="col-xs-12 col-sm-12 col-md-12 text-right spc">
-			<span class="hidden-xs clock99" id="clock">  
+			<span class="hidden-xs clock99" id="clock"> 
 				<script language="javascript">  
 					clock();  
 				</script>
@@ -47,9 +47,14 @@ get_header("news");
 		<?php while (have_posts()) : the_post(); ?>
 		<div class="col-md-12">
 			<div class="post-entrada">
-				<a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title(); ?>"><h2 class="post-title-entrada" id="post-<?php the_ID(); ?>">
-					<?php the_title(); ?></h2></a>
-				<small><?php the_time('F jS, Y') ?>  by <?php the_author() ?></small>
+				<a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title(); ?>">
+					<h2 class="post-title-entrada" id="post-<?php the_ID(); ?>">
+					<?php the_title(); ?></h2>
+				</a>
+				<div class="datos">
+				<small><i class="fa fa-calendar" aria-hidden="true"></i> <?php the_time('F jS, Y') ?> <i class="fa fa-user" aria-hidden="true"></i> <?php the_author() ?></small>
+				</div>
+				<hr class="entrada">
 				<div class="post-content">
 					<?php if ( has_post_thumbnail() ) : ?>
 					<div class="post-thumbnail">
@@ -62,7 +67,7 @@ get_header("news");
 		</div>
 		<?php endwhile; ?>
 	</div><br>
-	<hr class="fina">
+	<hr class="entrada">
 	<br>
 	<?php else : ?>
 	<h2 class="center">Not Found</h2>

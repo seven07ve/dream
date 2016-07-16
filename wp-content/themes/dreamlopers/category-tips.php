@@ -69,8 +69,11 @@ get_header("tips");
 				</div>
 				</a>
 			<?php endwhile; ?>
+
 			<?php endif; ?>
 		</div>
+		<hr class="fina">
+		<?php wpbeginner_numeric_posts_nav(""); ?>
 	</div>
 </div>
 <script src='<?php echo get_stylesheet_directory_uri(); ?>/assets/javascripts/cube.js'></script>
