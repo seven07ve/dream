@@ -1,69 +1,77 @@
-/***** General *****/
-.blue{
-    color: #4254fd;
+/***** Tips *****/
+
+.blue {
+	color: #4254fd;
 }
 
-.red{
-    color: red;
+.red {
+	color: red;
 }
 
 body {
 	font-family: 'Open Sans', sans-serif;
-    font-weight: 400;
-    -webkit-font-smoothing: antialiased;
+	font-weight: 400;
+	-webkit-font-smoothing: antialiased;
 	color: #444;
 }
 
 :focus {
-    outline: 0 !important
+	outline: 0 !important
 }
 
-strong { 
-	font-weight: 600; 
+strong {
+	font-weight: 600;
 }
 
-a, a:hover, a:focus {
+a,
+a:hover,
+a:focus {
 	color: #444;
 	text-decoration: none;
-    -webkit-transition: all .3s;
-    transition: all .3s;
+	-webkit-transition: all .3s;
+	transition: all .3s;
 }
 
 *,
 *:before,
 *:after {
-    box-sizing: border-box;
+	box-sizing: border-box;
 }
+
 h1 {
-    margin-top: 10px;
+	margin-top: 10px;
 	font-family: 'Luckiest Guy', sans-serif;
-    font-size: 75px;
-    text-shadow: 0 2px 1px #fff;
-    color: #444;
+	font-size: 75px;
+	text-shadow: 0 2px 1px #fff;
+	color: #444;
 }
-.claro{
+
+.claro {
 	text-shadow: 0 2px 1px #444;
 	color: #FFF;
 }
+
 h2 {
 	margin-top: 10px;
 	font-family: 'Dosis', sans-serif;
 	color: #555;
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 20px;
+	font-size: 20px;
+	font-weight: 400;
+	line-height: 20px;
 }
 
 h3 {
 	margin-top: 10px;
 	font-family: 'Open Sans', sans-serif;
 	color: #fff;
-    font-size: 18px;
-    font-weight: 300;
-    line-height: 18px;
+	font-size: 18px;
+	font-weight: 300;
+	line-height: 18px;
 }
 
-img { max-width: 100%; }
+img {
+	max-width: 100%;
+}
 
 .features-container ul {
 	list-style: disc;
@@ -71,25 +79,34 @@ img { max-width: 100%; }
 	text-align: left;
 }
 
-.features-container li{
+.features-container li {
 	padding: 1%;
 }
 
+
 /*-------------menu---------------------*/
+
 .navbar-default.menu-top li a {
 	color: #FFF !important;
 }
+
 .navbar-default.menu-shrink li a {
 	color: #323A45 !important;
 }
+
+
 /*---------------------------------------*/
-.pestanas{
+
+.pestanas {
 	position: fixed;
 	right: 0;
 	margin-top: -360px;
 }
+
+
 /*-------------portfolio---------------------*/
-.tips-bg{
+
+.tips-bg {
 	background: url(../images/backgrounds/tips.jpg);
 	background-size: cover;
 	background-position: center 920px;
@@ -97,14 +114,14 @@ img { max-width: 100%; }
 	background-position: center center;
 }
 
-.satelite{
+.satelite {
 	width: 10%;
 	position: fixed;
 	top: 70%;
 	left: -150px;
 }
 
-.portfolio-bg:hover .satelite{
+.portfolio-bg:hover .satelite {
 	-webkit-transition: 5s ease-out;
 	-webkit-transition: 5s linear;
 	transition: 5s linear;
@@ -114,20 +131,24 @@ img { max-width: 100%; }
 	transform: scale(.5);
 }
 
+
 /*-------------estilos para paginacion-------*/
-.navigation{
+
+.navigation {
 	text-align: center;
 	font-size: 16px;
 }
-.navigation ul{
+
+.navigation ul {
 	margin: 10px;
 }
+
 .navigation li a,
 .navigation li a:hover,
 .navigation li.active a,
 .navigation li.disabled {
 	color: #444;
-	text-decoration:none;
+	text-decoration: none;
 }
 
 .navigation li {
@@ -150,125 +171,128 @@ img { max-width: 100%; }
 .navigation li.active a {
 	background-color: #5B8AFD;
 }
+
+
 /*------------------------------------------*/
+
+
 /***** Media queries *****/
 
-@media (min-width: 992px) and (max-width: 1199px) {
-
-
-}
+@media (min-width: 992px) and (max-width: 1199px) {}
 
 @media (min-width: 768px) and (max-width: 991px) {
-
 	.top-content .text {
 		padding-top: 25px;
 	}
-	.pestanas{
-		float:right;
+	.pestanas {
+		float: right;
 		margin-top: -200px;
 		width: 25%;
 	}
 }
 
-@media (max-width: 991px) {
-
-}
+@media (max-width: 991px) {}
 
 @media (max-width: 767px) {
-
 	body {
 		padding-left: 0;
 		padding-right: 0;
-	}    
+	}
 	.navbar-default.menu-top {
 		border-bottom: 1px solid #eee;
 		text-align: center;
-		width:100%;
-	}  
-	.navbar-default.menu-top li a{
+		width: 100%;
+	}
+	.navbar-default.menu-top li a {
 		color: #323A45 !important;
 	}
-	.navbar-default.menu-top .navbar-brand{
+	.navbar-default.menu-top .navbar-brand {
 		color: #323A45 !important;
 	}
-
-	.pestanas{
-		float:right;
+	.pestanas {
+		float: right;
 		margin-top: -150px;
 		width: 25%;
 	}
-	.nombre-news h2{
-		padding-left: 0%;	
+	.nombre-news h2 {
+		padding-left: 0%;
 	}
 }
+
 @media (max-width: 600px) {
-	.pestanas{
-		float:right;
+	.pestanas {
+		float: right;
 		margin-top: -200px;
 		width: 25%;
 	}
-	.navbar-default.menu-top li a{
+	.navbar-default.menu-top li a {
 		color: #323A45 !important;
 	}
-	.navbar-default.menu-top .navbar-brand{
+	.navbar-default.menu-top .navbar-brand {
 		color: #323A45 !important;
 	}
-	.nombre-news{
+	.nombre-news {
 		text-align: center;
 		padding-top: 9%;
 		padding-left: 0%;
 	}
-	h1{
+	h1 {
 		margin-top: 65px;
 		font-size: 50px;
 	}
 }
+
 @media (max-width: 540px) {
-	.pestanas{
-		float:right;
+	.pestanas {
+		float: right;
 		margin-top: -200px;
 		width: 25%;
 	}
-	.navbar-default.menu-top li a{
+	.navbar-default.menu-top li a {
 		color: #323A45 !important;
 	}
-	.navbar-default.menu-top .navbar-brand{
+	.navbar-default.menu-top .navbar-brand {
 		color: #323A45 !important;
 	}
-
-	h1{
+	h1 {
 		margin-top: 65px;
 		font-size: 50px
 	}
 }
 
 @media (max-width: 400px) {
-	.navbar-default.menu-top li a{
+	.navbar-default.menu-top li a {
 		color: #323A45 !important;
 	}
-	.navbar-default.menu-top .navbar-brand{
+	.navbar-default.menu-top .navbar-brand {
 		color: #323A45 !important;
 	}
-	h1{
+	h1 {
 		margin-top: 65px;
 		font-size: 50px
 	}
 }
 
 @media (max-width: 345px) {
-
-	.navbar-default.menu-top li a{
+	.navbar-default.menu-top li a {
 		color: #323A45 !important;
 	}
-	.navbar-default.menu-top .navbar-brand{
+	.navbar-default.menu-top .navbar-brand {
 		color: #323A45 !important;
 	}
-
-	.top-content h2, .top-content .logo a, .features h3, .product-text h3, .product-button, .faq-text h3, .subscribe h3, .testimonials h3, .team h3, .contact h3 {
+	.top-content h2,
+	.top-content .logo a,
+	.features h3,
+	.product-text h3,
+	.product-button,
+	.faq-text h3,
+	.subscribe h3,
+	.testimonials h3,
+	.team h3,
+	.contact h3 {
 		padding: 0 20px;
 	}
-	
-	h1{
+	h1 {
 		margin-top: 65px;
 		font-size: 50px
 	}
