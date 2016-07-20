@@ -40,7 +40,7 @@
 				</div>
 
 					<?php wp_nav_menu( array(
-						'menu' => 'Main',
+						'menu' => 'seccion',
 						'container' => 'div',
 						'container_class' => 'navbar-collapse collapse',
 						'container_id' => 'none',

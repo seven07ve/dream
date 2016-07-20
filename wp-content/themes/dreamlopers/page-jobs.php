@@ -1,6 +1,6 @@
 <?php
 /**
-* Template Name: Empleos
+* Template Name: Jobs
 */
 get_header("social");
 ?>
@@ -11,7 +11,7 @@ get_header("social");
 		<div class='container'>
 			<div class='row'>
 				<div class='col-md-12 top-description'>
-					<img width="600" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/dreamlopers_empleo.png" alt="" />
+					<img width="600" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/dreamlopers_job.png" alt="" />
 				</div>
 			</div>
 		</div>
