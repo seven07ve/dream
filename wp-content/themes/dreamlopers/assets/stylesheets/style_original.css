@@ -407,6 +407,10 @@ textarea::-webkit-input-placeholder {
 	color: #f3f3f3 !important;
 }
 
+.navbar-default .menu-top-social li a {
+	color: #323A45 !important;
+}
+
 .navbar-default.menu-top .navbar-brand {
 	color: #f3f3f3 !important;
 }
@@ -450,7 +454,7 @@ textarea::-webkit-input-placeholder {
 	margin: 0 auto;
 	text-align: center;
 	color: #fff;
-	background: url("../images/backgrounds/sky.jpg");
+	background: url("../images/backgrounds/socials.jpg");
 	background-size: cover;
 	/*background-position: center 920px;*/
 	background-attachment: fixed;
@@ -500,7 +504,7 @@ textarea::-webkit-input-placeholder {
 
 .top-description {
 	margin-top: 30px;
-	margin-bottom: 160px;
+	margin-bottom: 200px;
 }
 
 .top-description p {
@@ -2088,6 +2092,11 @@ textarea::-webkit-input-placeholder {
 	.navbar-default.menu-top li a {
 		color: #323A45 !important;
 	}
+	
+	.navbar-default.menu-top-social li a {
+		color: #323A45 !important;
+	}
+	
 	.navbar-default.menu-top .navbar-brand {
 		color: #323A45 !important;
 	}
@@ -2209,6 +2218,9 @@ textarea::-webkit-input-placeholder {
 	.navbar-default.menu-top li a {
 		color: #323A45 !important;
 	}
+	.navbar-default.menu-top-social li a {
+		color: #323A45 !important;
+	}
 	.navbar-default.menu-top .navbar-brand {
 		color: #323A45 !important;
 	}
@@ -2246,6 +2258,9 @@ textarea::-webkit-input-placeholder {
 	.navbar-default.menu-top li a {
 		color: #323A45 !important;
 	}
+	.navbar-default.menu-top-social li a {
+		color: #323A45 !important;
+	}
 	.navbar-default.menu-top .navbar-brand {
 		color: #323A45 !important;
 	}
@@ -2262,6 +2277,9 @@ textarea::-webkit-input-placeholder {
 
 @media (max-width: 345px) {
 	.navbar-default.menu-top li a {
+		color: #323A45 !important;
+	}
+	.navbar-default.menu-top-social li a {
 		color: #323A45 !important;
 	}
 	.navbar-default.menu-top .navbar-brand {

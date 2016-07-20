@@ -14,9 +14,6 @@ get_header("home");
 			<div class='row'>
 				<div class='col-md-12 top-description'>
 					<img width="600" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/dreamlopers_blanco.png" alt="" />
-					<div class='top-button'>
-						<a class='btn btn-top btn-lg' href='#portfolio-section'>Nuestro Portafolio</a>
-					</div>
 				</div>
 			</div>
 		</div>
