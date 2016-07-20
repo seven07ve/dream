@@ -461,6 +461,17 @@ textarea::-webkit-input-placeholder {
 	background-position: center center;
 }
 
+.top-hiring {
+	margin: 0 auto;
+	text-align: center;
+	color: #fff;
+	background: url("../images/backgrounds/hiring.jpg");
+	background-size: cover;
+	/*background-position: center 920px;*/
+	background-attachment: fixed;
+	background-position: center center;
+}
+
 .inner-bg {
 	padding: 0;
 	padding-top: 180px;
