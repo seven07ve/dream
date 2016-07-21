@@ -1973,6 +1973,110 @@ textarea::-webkit-input-placeholder {
 	-webkit-transition: all 0.4s ease-in-out;
 }
 
+/*---------------comentarios--------------------*/
+.comentarios{
+	color:#444;
+	font-size: 14px;
+}
+
+.comentarios h3 {
+	font-family: 'Luckiest Guy', sans-serif;
+	color: #0dc0c0;
+	/*color: #444;*/
+	font-size: 18px;
+	font-weight: 600;
+	line-height: 18px;
+}
+
+.comment-body{
+	border: 1px solid #ddd;
+	border-radius: 10px;
+	margin-bottom: 5px;
+}
+
+.comment-body p {
+	padding: 1rem;
+	line-height: 2rem;
+}
+
+.reply{
+	text-align: right;
+	padding: 5px 15px;
+	font-weight: bold;
+	-webkit-transition: .4s linear;
+	transition: .4s linear;
+}
+
+.reply a:hover{
+	color: #0dc0c0;
+	-webkit-transition: .4s linear;
+	transition: .4s linear;
+}
+
+/*autor y meta*/
+.comment-author {
+	margin: 0;
+	overflow: hidden;
+	position: relative;
+	background: #f9f9f9;
+	border-bottom: 1px solid #ddd;
+/*	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;*/
+	color:#5d7196;
+	padding: 10px;
+}
+.comment-author cite{
+	font-size: 16px;
+	font-weight: bold;
+}
+
+.comment-awaiting-moderation{
+	color: #0DC0C0;
+}
+
+.commentmetadata{
+	text-align: right;
+	padding: 2px 5px;
+}
+
+/*respuestas margen*/
+.children{
+	margin-left: 2%;
+}
+
+/*formulario*/
+#respond form textarea{
+	border: 1px solid #ccc;
+	border-radius: 10px;
+	color:#444;
+	height: 200px;
+	line-height: 2rem;
+	padding: 2%;
+}
+
+#respond form input{
+	border: 1px solid #ccc;
+	border-radius: 10px;
+	width: 50%;
+	color:#444;
+	height: 50px;
+	line-height: 2rem;
+	padding: 2%;
+}
+#respond form label{
+	width: 70px;
+}
+
+#respond form .submit{
+	width: 20%;
+	height: 50px;
+	line-height: 2rem;
+	padding: 1%;
+	background: #0dc0c0;
+	border: 1px solid #09b1b9;
+	color: #fff !important;
+}
+/*----------------------------------------------*/
 @-webkit-keyframes palpitar {
 	0% {
 		-webkit-transform: scaleY(.9);

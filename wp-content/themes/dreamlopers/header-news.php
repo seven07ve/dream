@@ -23,6 +23,7 @@
 	<script src="<?php echo get_stylesheet_directory_uri(); ?>/assets/javascripts/application.js"></script>
 	<script src="<?php echo get_stylesheet_directory_uri(); ?>/assets/javascripts/main.js"></script>
 	<script src="<?php echo get_stylesheet_directory_uri(); ?>/assets/javascripts/script.js"></script>
+	<script src="<?php echo get_stylesheet_directory_uri(); ?>/assets/javascripts/coments.js"></script>
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 	<?php wp_head(); ?>
 

@@ -70,6 +70,17 @@ get_header("news");
 				</div>
 			</div>
 		</div>
+		<div class="text-right"><a href="" class="back"><i class="fa fa-arrow-circle-o-left back" aria-hidden="true" onclick="window.history.back()"></i></a></div>
+		<hr class="entrada">	
+		<div class="row">
+			<div class="col-md-offset-2 col-md-8">
+				<?php comments_template(); ?>
+				<span class="msj" id="msjauthor">Debe escribir un nombre.</span>
+				<span class="msj" id="msjmail">Debe escribir una dirección de correo válida.</span>
+				<span class="msj" id="msjcomentario">Debe escribir el comentario.</span>
+				<?php //comments_template('/templates/comments.php'); ?>
+			</div>
+		</div>
 		<?php endwhile; ?>
 	</div><br>
 	<hr class="entrada">
@@ -78,7 +89,6 @@ get_header("news");
 	<h2 class="center">Not Found</h2>
 	<p class="center"><?php _e("Lo siento, pero lo que buscas no está aquí."); ?></p>
 	<?php endif; ?>
-	<div class="text-right"><a href="" class="back"><i class="fa fa-arrow-circle-o-left back" aria-hidden="true" onclick="window.history.back()"></i></a></div>
 	<br>
 </section>
 

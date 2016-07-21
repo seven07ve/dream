@@ -465,7 +465,9 @@ hr.entrada {
 	text-transform: none;
 }
 
-
+.comment-author-link{
+	font-weight: bold;
+}
 /*---------------------------------------*/
 
 
