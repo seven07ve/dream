@@ -6,7 +6,7 @@ get_header("social");
 ?>
 
 <!-- Top Primera -->
-<div class='parallax top-social' data-stellar-background-ratio='0.3' id='home'>
+<div class='parallax bg-social' data-stellar-background-ratio='0.3' id='home'>
 	<div class='inner-bg'>
 		<div class='container'>
 			<div class='row'>
