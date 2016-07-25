@@ -10,9 +10,8 @@ get_header("equipo");
 		<div class='container'>
 			<div class='row'>
 				<div class='col-md-12 '>
-					<h1 class="claro">Dreamlopers Team</h1>
-					<div class='top-button'>
-						<br><br><br><br>
+					<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/dreamlopers_team.png" alt="" />
+					<br><br><br><br><br><br><br><br>
 					</div>
 				</div>
 			</div>

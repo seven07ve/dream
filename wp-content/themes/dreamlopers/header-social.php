@@ -27,7 +27,7 @@
 </head>
 <body>
 	<!--<div class="wrapper">-->
-		<div class='navbar navbar-default navbar-fixed-top menu-top-social' role='navigation'>
+		<div class='navbar navbar-default navbar-fixed-top menu-top' role='navigation'>
 			<div class='container'>
 				<div class='navbar-header'>
 					<button class='navbar-toggle' data-target='.navbar-collapse' data-toggle='collapse' type='button'>
