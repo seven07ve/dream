@@ -49,8 +49,7 @@ get_header("news");
 				<div class="post">
 					<a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title(); ?>"><h2 class="post-title" id="post-<?php the_ID(); ?>"><i class="fa fa-newspaper-o twitter" aria-hidden="true"></i>
 						<?php the_title(); ?></h2></a>
-					<hr>
-					<small><i class="fa fa-calendar" aria-hidden="true"></i> <?php echo get_the_date() ?>  <i class="fa fa-user" aria-hidden="true"></i> <?php the_author() ?></small>
+					<small><i class="fa fa-calendar" aria-hidden="true"></i> <?php echo get_the_date() ?>  | <i class="fa fa-user" aria-hidden="true"></i> <?php the_author() ?></small>
 					<hr>
 					<div class="post-content">
 						<?php if ( has_post_thumbnail() ) : ?>
