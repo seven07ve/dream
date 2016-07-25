@@ -12,7 +12,6 @@ get_header("team");
 				<div class='col-md-12 '>
 					<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/dreamlopers_team.png" alt="" />
 					<br><br><br><br><br><br><br><br>
-					</div>
 				</div>
 			</div>
 		</div>
