@@ -45,7 +45,7 @@ get_header("news");
 	<?php if (have_posts()) : ?>
 	<div class="row">
 		<?php while (have_posts()) : the_post(); ?>
-		<div class="col-md-12">
+		<div class="col-xs-12 col-sm-12 col-md-9">
 			<div class="post-entrada">
 				<a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title(); ?>">
 					<h2 class="post-title-entrada" id="post-<?php the_ID(); ?>">
@@ -65,10 +65,13 @@ get_header("news");
 				</div>
 			</div>
 		</div>
-		<div class="text-right"><a href="" class="back"><i class="fa fa-arrow-circle-o-left back" aria-hidden="true" onclick="window.history.back()"></i></a></div>
+		<div class="hidden-xs hidden-sm visible-md-3 col-md-3 sidebar">
+			<?php  get_sidebar()?>
+		</div>
+		<div class="text-left"><a href="" class="back"><i class="fa fa-arrow-circle-o-left back" aria-hidden="true" onclick="window.history.back()"></i></a></div>
 		<hr class="entrada">		
 		<div class="row comentarios">
-			<div class="col-md-offset-2 col-md-8">
+			<div class="col-xs-12 col-md-offset-2 col-md-8">
 				<?php comments_template(); ?>
 				<span class="msj" id="msjauthor">You must input a name.</span>
 				<span class="msj" id="msjmail">You must input a valid email address.</span>

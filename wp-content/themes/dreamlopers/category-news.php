@@ -42,7 +42,7 @@ get_header("news");
 <section class="container">
 <?php if (have_posts()) : ?>
 <div class="row">
-	<div class="col-md-9">
+	<div class="col-xs-12 col-sm-12 col-md-9">
 		<div class="row">
 			<?php while (have_posts()) : the_post(); ?>
 			<div class="col-md-6">
@@ -70,7 +70,7 @@ get_header("news");
 			<?php endwhile; ?>
 		</div><br>
 	</div>
-	<div class="col-md-3">
+	<div class="hidden-xs hidden-sm visible-md-3 col-md-3 sidebar">
 		<?php  get_sidebar()?>
 	</div>
 </div>
