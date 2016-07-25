@@ -1878,18 +1878,20 @@ width: 100%;
 
 .comment-body{
 	border: 1px solid #ddd;
-	border-radius: 10px;
+	background: #f9f9f9;
 	margin-bottom: 5px;
+	min-height: 120px;
 }
 
 .comment-body p {
+	float: left;
 	padding: 1rem;
 	line-height: 2rem;
 }
 
 .reply{
 	text-align: right;
-	padding: 5px 15px;
+	padding: 25px 15px;
 	font-weight: bold;
 	-webkit-transition: .4s linear;
 	transition: .4s linear;
@@ -1901,21 +1903,35 @@ width: 100%;
 	transition: .4s linear;
 }
 
+.commentlist{
+	list-style: none;
+}
+
 /*autor y meta*/
 .comment-author {
+	float: left;
 	margin: 0;
 	overflow: hidden;
 	position: relative;
-	background: #f9f9f9;
-	border-bottom: 1px solid #ddd;
 	/*	border-top-left-radius: 10px;
 	border-top-right-radius: 10px;*/
 	color:#5d7196;
 	padding: 10px;
 }
+.comment-author img{
+	margin-right: 10px;
+}
+
 .comment-author cite{
+	position: absolute;
+	top: 15px;
+	left: 120px;
 	font-size: 16px;
 	font-weight: bold;
+}
+
+.comment-author .says{
+	visibility: hidden;
 }
 
 .comment-awaiting-moderation{
@@ -1923,6 +1939,8 @@ width: 100%;
 }
 
 .commentmetadata{
+	float: right;
+	bottom: 0px;
 	text-align: right;
 	padding: 2px 5px;
 }

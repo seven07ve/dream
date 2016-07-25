@@ -1893,7 +1893,7 @@ function wp_list_comments( $args = array(), $comments = null ) {
 		'type'              => 'all',
 		'page'              => '',
 		'per_page'          => '',
-		'avatar_size'       => 32,
+		'avatar_size'       => 100,
 		'reverse_top_level' => null,
 		'reverse_children'  => '',
 		'format'            => current_theme_supports( 'html5', 'comment-list' ) ? 'html5' : 'xhtml',
