@@ -1880,18 +1880,23 @@ width: 100%;
 	border: 1px solid #ddd;
 	background: #f9f9f9;
 	margin-bottom: 5px;
-	min-height: 120px;
+	/*height: 160px;*/
 }
 
 .comment-body p {
-	float: left;
+	max-width: 80%;
+	position: relative;
+	top: -100px;
+	left: 130px;
 	padding: 1rem;
 	line-height: 2rem;
 }
 
 .reply{
+	position: relative;
+	top: -100px;
 	text-align: right;
-	padding: 25px 15px;
+	padding: 5px 15px;
 	font-weight: bold;
 	-webkit-transition: .4s linear;
 	transition: .4s linear;
@@ -1903,35 +1908,29 @@ width: 100%;
 	transition: .4s linear;
 }
 
-.commentlist{
-	list-style: none;
-}
-
 /*autor y meta*/
 .comment-author {
-	float: left;
-	margin: 0;
+	margin-top: 25px;
 	overflow: hidden;
 	position: relative;
+	/*border-bottom: 1px solid #ddd;*/
 	/*	border-top-left-radius: 10px;
 	border-top-right-radius: 10px;*/
 	color:#5d7196;
 	padding: 10px;
 }
-.comment-author img{
-	margin-right: 10px;
-}
-
 .comment-author cite{
-	position: absolute;
-	top: 15px;
-	left: 120px;
+	position: relative;
+	top: -30px;
 	font-size: 16px;
 	font-weight: bold;
+	margin-left: 5px;
 }
 
-.comment-author .says{
-	visibility: hidden;
+.says{
+	position: relative;
+	top: -30px;
+	margin-left: 5px;
 }
 
 .comment-awaiting-moderation{
@@ -1939,8 +1938,8 @@ width: 100%;
 }
 
 .commentmetadata{
-	float: right;
-	bottom: 0px;
+	position: relative;
+	top: -100px;
 	text-align: right;
 	padding: 2px 5px;
 }
@@ -1953,7 +1952,7 @@ width: 100%;
 /*formulario*/
 #respond form textarea{
 	border: 1px solid #ccc;
-	border-radius: 10px;
+	/*border-radius: 10px;*/
 	color:#444;
 	height: 200px;
 	line-height: 2rem;
@@ -1962,7 +1961,7 @@ width: 100%;
 
 #respond form input{
 	border: 1px solid #ccc;
-	border-radius: 10px;
+	/*border-radius: 10px;*/
 	width: 50%;
 	color:#444;
 	height: 50px;
