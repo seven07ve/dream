@@ -1891,7 +1891,7 @@ width: 100%;
 	line-height: 2rem;
 }
 
-/*.reply{
+.reply{
 	position: relative;
 	top: -100px;
 	text-align: right;
@@ -1899,7 +1899,7 @@ width: 100%;
 	font-weight: bold;
 	-webkit-transition: .4s linear;
 	transition: .4s linear;
-}*/
+}
 
 .reply a:hover{
 	color: #0dc0c0;
@@ -1912,33 +1912,36 @@ width: 100%;
 	margin-top: 25px;
 	overflow: hidden;
 	position: relative;
+	/*border-bottom: 1px solid #ddd;*/
+	/*	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;*/
 	color:#5d7196;
 	padding: 10px;
 }
-/*.comment-author cite{
+.comment-author cite{
 	position: relative;
 	top: -30px;
 	font-size: 16px;
 	font-weight: bold;
 	margin-left: 5px;
-}*/
+}
 
-/*.says{
-	position: ;
+.says{
+	position: relative;
 	top: -30px;
 	margin-left: 5px;
-}*/
+}
 
 .comment-awaiting-moderation{
 	color: #0DC0C0;
 }
 
-/*.commentmetadata{
+.commentmetadata{
 	position: relative;
 	top: -100px;
 	text-align: right;
 	padding: 2px 5px;
-}*/
+}
 
 /*respuestas margen*/
 .children{
@@ -1960,7 +1963,7 @@ width: 100%;
 	/*border-radius: 10px;*/
 	width: 50%;
 	color:#444;
-	height: 40px;
+	height: 50px;
 	line-height: 2rem;
 	padding: 2%;
 }
@@ -1978,54 +1981,6 @@ width: 100%;
 	color: #fff !important;
 }
 /*----------------------------------------------*/
-/*--------------- comentarios nuevos --------------------*/
-.comment{
-	list-style: none;
-}
-
-.comment footer{
-	box-sizing: border-box;
-	border: 1px solid #ddd;
-	background: #f9f9f9;
-	margin-bottom: 5px;
-	padding: 7px;
-}
-
-.commentmetadata{
-	text-align: right;
-	padding: 2px 5px;
-}
-
-.comment-content{
-	margin-top: 20px;
-}
-
-.comment-author {
-	float: left;
-	width: 120px;
-	margin-top: 5px;
-	overflow: hidden;
-}
-cite.fn{
-	color:#5d7196;
-	font-size: 16px;
-	font-weight: bold;
-	margin-top: 5px;
-	margin-left: 5px;
-}
-
-.says{
-	margin-left: 5px;
-}
-
-.reply{
-	text-align: right;
-	padding: 5px 15px;
-	font-weight: bold;
-	-webkit-transition: .4s linear;
-	transition: .4s linear;
-}
-/*-------------------------------------------------------*/
 /***** Media queries *****/
 
 @media (min-width: 992px) and (max-width: 1199px) {

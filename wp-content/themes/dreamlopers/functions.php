@@ -1,4 +1,5 @@
 <?php
+require( dirname( __FILE__ ) . '/inc/template-tags.php' );
 //para usar las librerias de los dos idiomas
 function dreamlopers_lang_setup() {
 	load_theme_textdomain('dreamlopers', get_template_directory() . '/languages');
@@ -205,10 +206,10 @@ function my_single_template($single) {
 
 /*--------------- comentarios anidados-------------*/
 // Permitir comentarios encadenados
-function enable_threaded_comments(){
+/*function enable_threaded_comments(){
 	if (is_singular() AND comments_open() AND (get_option('thread_comments') == 1)) {
 		wp_enqueue_script('comment-reply');
 	}
 }
-add_action('get_header', 'enable_threaded_comments');
+add_action('get_header', 'enable_threaded_comments');*/
 ?>
