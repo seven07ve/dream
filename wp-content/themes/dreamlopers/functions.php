@@ -1,5 +1,14 @@
 <?php
 require( dirname( __FILE__ ) . '/inc/template-tags.php' );
+
+//eliminar url field
+function wpb_disable_comments ($fields){
+	unset($fields['url']);
+	return $fields;
+}
+
+add_filter('comment_form_default_fields', 'wpb_disable_comments');
+
 //para usar las librerias de los dos idiomas
 function dreamlopers_lang_setup() {
 	load_theme_textdomain('dreamlopers', get_template_directory() . '/languages');
