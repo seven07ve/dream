@@ -17,11 +17,11 @@ get_header("home");
 				</div>
 			</div>
 		</div>
-		<div class="pestanas">
-			<a href="<?php echo get_site_url()."/es/empleos/"; ?>"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/pestana-aspirantes-es.png" class="img-responsive" alt="Image"></a><br>
-			<a href="<?php echo get_site_url()."/es/category/noticias-es/"; ?>"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/pestana-news-es.png" class="img-responsive" alt="Image"></a>
-		</div>
 	</div>
+</div>
+<div class="pestanas">
+	<a href="<?php echo get_site_url()."/es/empleos/"; ?>"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/pestana-aspirantes-es.png" class="img-responsive" alt="Image"></a><br>
+	<a href="<?php echo get_site_url()."/es/category/noticias-es/"; ?>"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/pestana-news-es.png" class="img-responsive" alt="Image"></a>
 </div>
 <!-- Why -->
 <div class='features-container' id='why'>
