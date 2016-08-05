@@ -183,7 +183,9 @@ Solo se puede modificar en las plantillas.
   - En nombre seleccionas `Tips-link-imagen`.
   - En valor la `url` de la imagen.
 * Luego se hace click en el + de Languages para hacer lo mismo en el otro idioma
+
 ***
+
 ### Social
 ```
 header-social.php
