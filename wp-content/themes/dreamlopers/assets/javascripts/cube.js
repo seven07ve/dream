@@ -2,7 +2,7 @@
     'use strict';
 
     // init cubeportfolio
-    $('#grid-container').cubeportfolio({
+    jQuery('#grid-container').cubeportfolio({
         filters: '#filters-container',
         loadMore: '#loadMore-container',
         loadMoreAction: 'click',
@@ -35,7 +35,7 @@
             // to update singlePage content use the following method: this.updateSinglePage(yourContent)
             var t = this;
 
-            $.ajax({
+            jQuery.ajax({
                     url: url,
                     type: 'GET',
                     dataType: 'html',
